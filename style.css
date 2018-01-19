@@ -1,41 +1,46 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-* {
-		margin: 0;
-		padding: 0;
-		font-family: 'Roboto', sans-serif;
+
+body { /* //CHANGED FROM * TO BODY BECAUSE RESET OVERIDE THE FONT */
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
 }
+
 .clear{
 	clear: both;
 }
+
 body{
 	padding: 20px;
 	background: #ffffff;
 }
+
 #header{
 	margin: 10px;
 	padding: 10px;
 	border-bottom: 1px solid #000000;
 }
+
 #logo{
 	font-size: 25px;
-
 }
-#logo img{
 
+#logo img{
 	height: 40px;
 	width: auto;
 	border-right: 1px solid #000000;
-	margin-right: 10px;
-	
+	margin-right: 10px;	
 }
 
 #logo, #menu{
 	float: left;
 	width: 50%;
 }
+
 #menu{
-		text-align: right;
+	text-align: right;
 }
+
 #menu ul{
 	list-style: none;
 }
@@ -43,6 +48,7 @@ body{
 #menu ul li{
 	display: inline-block;
 }
+
 #menu ul li a{
 	text-decoration: none;
 	color: #0000ff;
@@ -52,41 +58,94 @@ body{
 #hero img{
 	width: 100%;
 	height: auto;
-	margin: 30px 0;
+	margin: 10px 0;
 }
+
 .featured-image{
-		float: left;
-		width: 23%;
-		margin: 0 2.5% 0 0;
+	float: left;
+	width: 22%;
+	margin: 0 4% 0 0;
 }
+
 .featured-image.first{
-	margin: 0 5% 0 0;
+	margin: 0 4% 0 0;
+
 }
-}
+
 .featured-image.second{
-	margin: 0 0 0 0;
+	margin: 0 4% 0 0;
 }
-}
+
 .featured-image.third{
-	margin: 7% 0 0 0;
+	margin: 0 4% 0 0;
 }
+
 .featured-image.last{
 	margin: 0 0 0 0;
 }
+
 .featured-image img{
 	width: 100%;
 	height: auto;
 }
-#address{
-	/* text-align: right; */
-	float: right;
 
+#address{
+	float: right;
 }
+
 #copyright{
 	float: left;
-	/* text-align: left; */
 }
+
 #footer{
 	margin: 10px;
 	border-top: 1px solid #000000;
+}
+
+a:hover {
+    background-color: yellow;
+}
+
+@media (max-width: 979px) {
+
+ /* Selectors and styles affecting screens UP TO 979px (Desktop)
+ 	CAN BE IGNORED, ALL CODES ABOVE ARE FOR DESKTOP */
+
+}
+
+
+
+@media (max-width: 767px) {
+
+   /* Selectors and styles affecting screens UP TO 767px (Tablet) */
+
+}
+
+
+
+@media (max-width: 480px) {
+
+   /* Selectors and styles affecting screens UP TO 480px (Phone) */
+
+   .featured-image{
+		float: left;
+		width: 95%;
+		margin: 10% 2.5% 0 0;
+	}
+
+	.featured-image.first{
+		margin: 10% 4% 0 0;
+	}
+
+	.featured-image.second{
+		margin: 10% 4% 0 0;
+	}
+
+	.featured-image.third{
+		margin: 10% 4% 0 0;
+	}
+
+	.featured-image.last{
+		margin: 10% 0 0 0;
+	}
 }
